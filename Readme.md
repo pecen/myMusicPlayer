@@ -1,4 +1,4 @@
-# myFlatLightLogin
+# myMusicPlayer
 This is a continued project from the YouTube tutorial "How to Design a Flat Light Login Page in C#" with my add-ons. 
 
 I created this project initially in the Tutorials repository. The following is the description from the Readme there:
