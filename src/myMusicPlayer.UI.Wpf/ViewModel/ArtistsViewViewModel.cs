@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace myMusicPlayer.UI.Wpf.ViewModel
 {
-    public class HomeViewViewModel : ViewModelBase
+    public class ArtistsViewViewModel : ViewModelBase
     {
-        public HomeViewViewModel()
+        public ArtistsViewViewModel()
         {
-            Title = "Home";
+            Title = "Artists";
         }
     }
 }

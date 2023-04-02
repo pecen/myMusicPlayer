@@ -1,4 +1,5 @@
 ﻿using myMusicPlayer.UI.Wpf.Core;
+using System.Runtime.InteropServices;
 using System.Windows;
 
 namespace myMusicPlayer.UI.Wpf.ViewModel
@@ -12,12 +13,16 @@ namespace myMusicPlayer.UI.Wpf.ViewModel
         public RelayCommand MinimizeWindowCommand { get; set; }
         public RelayCommand MaximizeWindowCommand { get; set; }
 
+        public RelayCommand ShowHomeViewCommand { get; set; }
+        public RelayCommand ShowPlaylistsViewCommand { get; set; }
+        public RelayCommand ShowArtistsViewCommand { get; set; }
+
         #endregion
 
         #region Properties
 
-        private object _currentView;
-        public object CurrentView
+        private ViewModelBase _currentView;
+        public ViewModelBase CurrentView
         {
             get { return _currentView; }
             set { SetProperty(ref _currentView, value); }
@@ -28,12 +33,16 @@ namespace myMusicPlayer.UI.Wpf.ViewModel
         #region ViewModels
 
         public HomeViewViewModel HomeViewVM { get; set; }
+        public PlaylistsViewViewModel PlaylistsViewVM { get; set; }
+        public ArtistsViewViewModel ArtistsViewVM { get; set; }
 
         #endregion
 
         public MainWindowViewModel()
         {
             HomeViewVM = new HomeViewViewModel();
+            PlaylistsViewVM = new PlaylistsViewViewModel();
+            ArtistsViewVM = new ArtistsViewViewModel();
 
             _currentView = HomeViewVM;
 
@@ -52,6 +61,12 @@ namespace myMusicPlayer.UI.Wpf.ViewModel
                     Application.Current.MainWindow.WindowState = WindowState.Maximized;
                 }
             });
+
+            ShowHomeViewCommand = new RelayCommand(o => CurrentView = HomeViewVM);
+            
+            ShowPlaylistsViewCommand = new RelayCommand(o => CurrentView = PlaylistsViewVM);
+
+            ShowArtistsViewCommand = new RelayCommand(o => CurrentView = ArtistsViewVM);
         }
     }
 }

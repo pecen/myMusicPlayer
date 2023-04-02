@@ -4,14 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace myMusicPlayer.UI.Wpf.ViewModel
 {
-    public class HomeViewViewModel : ViewModelBase
+    public class PlaylistsViewViewModel : ViewModelBase
     {
-        public HomeViewViewModel()
+        public PlaylistsViewViewModel()
         {
-            Title = "Home";
+            Title = "Playlists";
         }
     }
 }

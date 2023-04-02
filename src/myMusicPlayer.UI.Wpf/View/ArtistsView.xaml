@@ -1,11 +1,10 @@
 ﻿<UserControl
-    x:Class="myMusicPlayer.UI.Wpf.View.PlaylistsView"
+    x:Class="myMusicPlayer.UI.Wpf.View.ArtistsView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:vm="clr-namespace:myMusicPlayer.UI.Wpf.ViewModel"
-    xmlns:uc="clr-namespace:myMusicPlayer.UI.Wpf.UserControls">
+    xmlns:vm="clr-namespace:myMusicPlayer.UI.Wpf.ViewModel">
     <UserControl.DataContext>
-        <vm:PlaylistsViewViewModel />
+        <vm:ArtistsViewViewModel />
     </UserControl.DataContext>
     <Grid>
         <StackPanel Margin="40,60,10,0" Background="White">
@@ -33,29 +32,9 @@
                         </Border.Background>
                     </Border>
 
-                    <!--Playlists-->
+                    <!--Artists-->
                     <StackPanel Margin="30,50,30,0">
 
-                        <!--  Populars  -->
-                        <uc:Playlist
-                        Title="Glory"
-                        Description="Intro"
-                        Image="../Images/Genomskinlig tunnel.jpg" />
-                        <uc:Playlist
-                        Title="Miracle"
-                        Margin="0,4,0,0"
-                        Description="Healing"
-                        Image="../Images/Stad.jpg" />
-                        <uc:Playlist
-                        Title="Glory"
-                        Margin="0,4,0,0"
-                        Description="Intro"
-                        Image="../Images/Genomskinlig tunnel.jpg" />
-                        <uc:Playlist
-                        Title="Miracle"
-                        Margin="0,4,0,4"
-                        Description="Healing"
-                        Image="../Images/Stad.jpg" />
                     </StackPanel>
                 </Grid>
             </Border>
