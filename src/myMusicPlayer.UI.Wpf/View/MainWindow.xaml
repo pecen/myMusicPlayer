@@ -86,14 +86,14 @@
                         </Grid>
                     </RadioButton>
 
-                    <RadioButton Style="{StaticResource menuButton}">
+                    <RadioButton Command="{Binding ShowAlbumsViewCommand}" Style="{StaticResource menuButton}">
                         <Grid>
                             <TextBlock Margin="0,0,0,2" Text="Albums" />
                             <icon:PackIconMaterial Style="{StaticResource menuButtonIcon}" />
                         </Grid>
                     </RadioButton>
 
-                    <RadioButton Style="{StaticResource menuButton}">
+                    <RadioButton Command="{Binding ShowSongsViewCommand}" Style="{StaticResource menuButton}">
                         <Grid>
                             <TextBlock Margin="0,0,0,2" Text="Songs" />
                             <icon:PackIconMaterial Style="{StaticResource menuButtonIcon}" />

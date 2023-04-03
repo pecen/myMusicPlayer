@@ -22,6 +22,14 @@
             <view:ArtistsView />
         </DataTemplate>
 
+        <DataTemplate DataType="{x:Type vm:AlbumsViewViewModel}">
+            <view:AlbumsView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:SongsViewViewModel}">
+            <view:SongsView />
+        </DataTemplate>
+
         <!--#endregion-->
 
         <Style x:Key="topButton" TargetType="Button">

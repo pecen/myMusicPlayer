@@ -16,6 +16,8 @@ namespace myMusicPlayer.UI.Wpf.ViewModel
         public RelayCommand ShowHomeViewCommand { get; set; }
         public RelayCommand ShowPlaylistsViewCommand { get; set; }
         public RelayCommand ShowArtistsViewCommand { get; set; }
+        public RelayCommand ShowAlbumsViewCommand { get; set; }
+        public RelayCommand ShowSongsViewCommand { get; set; }
 
         #endregion
 
@@ -35,6 +37,8 @@ namespace myMusicPlayer.UI.Wpf.ViewModel
         public HomeViewViewModel HomeViewVM { get; set; }
         public PlaylistsViewViewModel PlaylistsViewVM { get; set; }
         public ArtistsViewViewModel ArtistsViewVM { get; set; }
+        public AlbumsViewViewModel AlbumsViewVM { get; set; }
+        public SongsViewViewModel SongsViewVM { get; set; }
 
         #endregion
 
@@ -43,6 +47,8 @@ namespace myMusicPlayer.UI.Wpf.ViewModel
             HomeViewVM = new HomeViewViewModel();
             PlaylistsViewVM = new PlaylistsViewViewModel();
             ArtistsViewVM = new ArtistsViewViewModel();
+            AlbumsViewVM = new AlbumsViewViewModel();
+            SongsViewVM = new SongsViewViewModel();
 
             _currentView = HomeViewVM;
 
@@ -63,10 +69,10 @@ namespace myMusicPlayer.UI.Wpf.ViewModel
             });
 
             ShowHomeViewCommand = new RelayCommand(o => CurrentView = HomeViewVM);
-            
             ShowPlaylistsViewCommand = new RelayCommand(o => CurrentView = PlaylistsViewVM);
-
             ShowArtistsViewCommand = new RelayCommand(o => CurrentView = ArtistsViewVM);
+            ShowAlbumsViewCommand = new RelayCommand(o => CurrentView = AlbumsViewVM);
+            ShowSongsViewCommand = new RelayCommand(o => CurrentView = SongsViewVM);
         }
     }
 }
