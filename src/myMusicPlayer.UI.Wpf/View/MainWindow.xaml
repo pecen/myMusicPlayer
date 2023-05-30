@@ -5,7 +5,7 @@
     xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:uc="clr-namespace:myMusicPlayer.UI.Wpf.UserControls"
     xmlns:vm="clr-namespace:myMusicPlayer.UI.Wpf.ViewModel"
-    Title="MainWindow"
+    Title="{Binding Title}"
     Width="1050"
     Height="700"
     AllowsTransparency="True"

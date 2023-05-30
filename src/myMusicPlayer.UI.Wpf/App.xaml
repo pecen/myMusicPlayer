@@ -7,7 +7,6 @@
     xmlns:vm="clr-namespace:myMusicPlayer.UI.Wpf.ViewModel"
     StartupUri="View/MainWindow.xaml">
     <Application.Resources>
-
         <!--#region The View/ViewModel Bindings-->
 
         <DataTemplate DataType="{x:Type vm:HomeViewViewModel}">
@@ -157,7 +156,11 @@
             <Setter Property="Height" Value="17" />
         </Style>
 
-        <!--#region Slider Style-->
+        <!--#region Slider-->
+
+        <!--<ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Theme/SliderTheme.South.xaml" />
+            </ResourceDictionary.MergedDictionaries>-->
 
         <Style x:Key="RepeatButtonTransparent" TargetType="{x:Type RepeatButton}">
             <Setter Property="OverridesDefaultStyle" Value="true" />

@@ -20,7 +20,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Remove="Theme\SliderTheme.South.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Theme\SliderTheme.South.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\myMusicPlayer.DalMock\myMusicPlayer.DalMock.csproj" />
+    <ProjectReference Include="..\myMusicPlayer.Dal\myMusicPlayer.Dal.csproj" />
+    <ProjectReference Include="..\myMusicPlayer.Library\myMusicPlayer.Library.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -34,7 +34,7 @@
                     </Border>
 
                     <!--Playlists-->
-                    <StackPanel Margin="30,50,30,0">
+                    <ItemsControl ItemsSource="{Binding Playlists.Items}" Margin="30,20,30,20">
 
                         <!--  Populars  -->
                         <uc:Playlist
@@ -56,7 +56,7 @@
                         Margin="0,4,0,4"
                         Description="Healing"
                         Image="../Images/Stad.jpg" />
-                    </StackPanel>
+                    </ItemsControl>
                 </Grid>
             </Border>
         </StackPanel>

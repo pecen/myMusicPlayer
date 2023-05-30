@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myMusicPlayer.UI.Wpf", "myMusicPlayer.UI.Wpf\myMusicPlayer.UI.Wpf.csproj", "{5F00D194-8764-4735-BF6D-70EA23C12D44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myMusicPlayer.UI.Wpf", "myMusicPlayer.UI.Wpf\myMusicPlayer.UI.Wpf.csproj", "{5F00D194-8764-4735-BF6D-70EA23C12D44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myMusicPlayer.Library", "myMusicPlayer.Library\myMusicPlayer.Library.csproj", "{50950F18-C452-4500-AF13-93AB03E581EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myMusicPlayer.Dal", "myMusicPlayer.Dal\myMusicPlayer.Dal.csproj", "{836DB6CB-EA1C-4702-B8B9-67FE5C57166C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myMusicPlayer.DalMock", "myMusicPlayer.DalMock\myMusicPlayer.DalMock.csproj", "{84171459-8B6C-45AB-BE3A-6E0C03D38B38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{5F00D194-8764-4735-BF6D-70EA23C12D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F00D194-8764-4735-BF6D-70EA23C12D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F00D194-8764-4735-BF6D-70EA23C12D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50950F18-C452-4500-AF13-93AB03E581EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50950F18-C452-4500-AF13-93AB03E581EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50950F18-C452-4500-AF13-93AB03E581EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50950F18-C452-4500-AF13-93AB03E581EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{836DB6CB-EA1C-4702-B8B9-67FE5C57166C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836DB6CB-EA1C-4702-B8B9-67FE5C57166C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836DB6CB-EA1C-4702-B8B9-67FE5C57166C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836DB6CB-EA1C-4702-B8B9-67FE5C57166C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84171459-8B6C-45AB-BE3A-6E0C03D38B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84171459-8B6C-45AB-BE3A-6E0C03D38B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84171459-8B6C-45AB-BE3A-6E0C03D38B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84171459-8B6C-45AB-BE3A-6E0C03D38B38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

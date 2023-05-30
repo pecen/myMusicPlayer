@@ -51,6 +51,7 @@ namespace myMusicPlayer.UI.Wpf.ViewModel
             SongsViewVM = new SongsViewViewModel();
 
             _currentView = HomeViewVM;
+            Title = "myMusicPlayer v1.0";
 
             MoveWindowCommand = new RelayCommand(o => { Application.Current.MainWindow.DragMove(); });
             ShutdownWindowCommand = new RelayCommand(o => { Application.Current.Shutdown(); });
